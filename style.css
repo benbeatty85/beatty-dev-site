@@ -1,0 +1,188 @@
+/*colours*/
+
+/*Peru = rgb(205,133,63)*/
+
+*, *::before, *::after {
+/* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+-webkit-box-sizing: border-box; 
+
+/* Firefox (desktop or Android) 28- */
+-moz-box-sizing: border-box;
+
+/* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+background: white;
+font-family: 'NTR', sans-serif;
+}
+
+
+
+/***Navigation***/
+
+
+
+#nav_switch {
+display: none;
+}
+
+.full-screen-navigation {
+width: 0;
+height: 0;
+position: absolute;
+top: 0;
+right: 0;
+transition: background 0.75s ease 0.75s, width 0s ease 1.5s, height 0s ease 1.5s, position 0s ease 1.5s;
+-webkit-transition: background 0.75s ease 0.75s, width 0s ease 1.5s, height 0s ease 1.5s, position 0s ease 1.5s;
+-moz-transition: background 0.75s ease 0.75s, width 0s ease 1.5s, height 0s ease 1.5s, position 0s ease 1.5s;
+-o-transition: background 0.75s ease 0.75s, width 0s ease 1.5s, height 0s ease 1.5s, position 0s ease 1.5s;
+}
+
+#nav_switch:checked + .full-screen-navigation {
+background: rgb(205,133,63);
+width: 100%;
+height: 100%;
+position: fixed;
+transition: background 1s ease 1.5s;
+-webkit-transition: background 1s ease 1.5s;
+-moz-transition: background 1s ease 1.5s;
+-o-transition: background 1s ease 1.5s;
+}
+
+.three-bars-switch {
+width: 70px;
+height: 52px;
+border: solid 8px black;
+border-left: none;
+border-right: none;
+position: absolute;
+top: 30px;
+right: 30px;
+display: block;
+outline: none;
+cursor: pointer;
+transform: scale(1, 1) rotate(0deg);
+transition: transform 0.75s ease 0.75s;
+-webkit-transition: transform 0.75s ease 0.75s;
+-moz-transition: transform 0.75s ease 0.75s;
+-o-transition: transform 0.75s ease 0.75s;
+}
+
+#nav_switch:checked + .full-screen-navigation ~ .three-bars-switch {
+transition: transform 0.75s ease 0.75s;
+-webkit-transition: transform 0.75s ease 0.75s;
+-moz-transition: transform 0.75s ease 0.75s;
+-o-transition: transform 0.75s ease 0.75s;
+transform: scale(0, 0) rotate(1440deg);
+}
+
+.three-bars-switch:after {
+content: "";
+background: black;
+width: 70px;
+height: 7px;
+margin: 0 auto;
+position: absolute;
+top: 15px;
+display: block;
+}
+
+#nav_switch:checked + .full-screen-navigation ~ .three-bars-switch:after {
+transition: background 0.75s;
+-webkit-transition: background 0.75s;
+-moz-transition: background 0.75s;
+-o-transition: background 0.75s;
+background: none;
+}
+
+.cross-bars-switch {
+width: 50px;
+height: 48px;
+position: absolute;
+top: 30px;
+right: 30px;
+outline: none;
+cursor: pointer;
+transform: scale(0, 0);
+transition: transform 0.75s;
+-webkit-transition: transform 0.75s;
+-moz-transition: transform 0.75s;
+-o-transition: transform 0.75s;
+}
+
+#nav_switch:checked + .full-screen-navigation > .cross-bars-switch {
+transition: transform 0.75s ease 1.5s;
+-webkit-transition: transform 0.75s ease 1.5s;
+-moz-transition: transform 0.75s ease 1.5s;
+-o-transition: transform 0.75s ease 1.5s;
+transform: scale(1, 1);
+}
+
+.cross-bars-switch:before {
+content: "";
+background: white;
+width: 60px;
+height: 8px;
+display: block;
+transform: rotate(45deg);
+position: absolute;
+top: 20px;
+left: -5px;
+}
+
+.cross-bars-switch:after {
+content: "";
+background: white;
+width: 60px;
+height: 8px;
+display: block;
+transform: rotate(-45deg);
+position: absolute;
+top: 20px;
+left: -5px;
+}
+
+.navigation-container {
+height: 450px;
+font-size: 50px;
+line-height: 1.75em;
+margin: 0 auto;
+opacity: 0;
+overflow: hidden;
+list-style-type: none;
+transition: opacity 0.5s, margin 0.5s;
+-webkit-transition: opacity 0.5s, margin 0.5s;
+-moz-transition: opacity 0.5s, margin 0.5s;
+-o-transition: opacity 0.5s, margin 0.5s;
+}
+
+#nav_switch:checked + .full-screen-navigation > .navigation-container {
+opacity: 1;
+margin: calc(30vh - 100px) auto 0;
+transition: opacity 1s ease 2.50s, margin 1s ease 2.50s;
+-webkit-transition: opacity 1s ease 2.50s, margin 1s ease 2.50s;
+-moz-transition: opacity 1s ease 2.50s, margin 1s ease 2.50s;
+-o-transition: opacity 1s ease 2.50s, margin 1s ease 2.50s;
+}
+
+.navigation-container > li {
+text-align: center;
+}
+
+.navigation-container > li > a {
+color: white;
+text-decoration: none;
+text-transform: capitalize;
+transition: text-shadow 0.25s;
+-webkit-transition: text-shadow 0.25s;
+-moz-transition: text-shadow 0.25s;
+-o-transition: text-shadow 0.25s;
+}
+
+.navigation-container > li > a:hover {
+text-shadow: 0 0 20px white;
+}
