@@ -326,21 +326,27 @@ border-radius: 0;
 
 .skills {
 background-color: rgba(0,128,128,1);
-color: white;
-display: flex;
-flex-direction: column;
+color: rgba(0,128,128,1);
 text-align: center;
 text-transform: capitalize;
+}
+
+.skills-content {
+display: flex;
+flex-direction: column;
 }
 
 .skills h2 {
 text-transform: capitalize;
 font-size: 5em;
 padding: 0 0.5em 0 0.5em;
+color: white;
 }
 
 .individual-skills {
-padding: 1em 0 0 1em;
+background: white;
+margin: 1em;
+border-radius: 15px;
 }
 
 .individual-skills i {
@@ -363,6 +369,21 @@ padding: 0.5em;
 .about p {
 font-size: 1.3em;
 padding: 1em;
+}
+    
+.skills-content {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+    
+.individual-skills i {
+font-size: 5em;
+}
+
+.individual-skills p {
+font-size: 1.5em;
 }
     
 }
@@ -405,6 +426,10 @@ border-radius: 100%;
 font-size: 1.5em;
 bottom: 5em;
 right: 0.5em;
+}
+    
+.individual-skills {
+margin: 2em;
 }
     
 }
