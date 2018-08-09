@@ -292,7 +292,7 @@ padding: 0 0.5em 0.5em 0.5em;
 
 .about p {
 text-align: center;
-font-size: 1.4em;
+font-size: 1.1em;
 padding: 1em;
 max-width: 900px;
 margin: 0 auto;
@@ -307,8 +307,9 @@ height: 500px;
 width: 80vw;
 max-width: 600px;
 margin: 0 auto;
+margin-bottom: 2em;
 position: relative;
-border-radius: 100%;
+border-radius: 0;
 }
 
 .about-image-overlay {
@@ -316,7 +317,40 @@ position: absolute;
 height: 100%;
 width: 100%;
 background-color: rgba(0,128,128,0.3);
-border-radius: 100%;
+border-radius: 0;
+}
+
+
+/*Skills Section*/
+
+
+.skills {
+background-color: rgba(0,128,128,1);
+color: white;
+display: flex;
+flex-direction: column;
+text-align: center;
+text-transform: capitalize;
+}
+
+.skills h2 {
+text-transform: capitalize;
+font-size: 5em;
+padding: 0 0.5em 0 0.5em;
+}
+
+.individual-skills {
+padding: 1em 0 0 1em;
+}
+
+.individual-skills i {
+font-size: 4em;
+padding: 0.3em;
+}
+
+.individual-skills p {
+font-size: 1.3em;
+padding: 0.5em;
 }
 
 
@@ -353,6 +387,14 @@ flex-direction: column;
     
 .about p {
 text-align: center;
+}
+    
+.about-image {
+border-radius: 100%;
+}
+
+.about-image-overlay {
+border-radius: 100%;
 }
     
 }
