@@ -433,6 +433,15 @@ right: 0.5em;
 margin: 2em;
 }
     
+.individual-skills i {
+font-size: 9em;
+}
+    
+.individual-skills p {
+font-size: 1.7em;
+padding: 1em;
+}
+    
 }
 
 
