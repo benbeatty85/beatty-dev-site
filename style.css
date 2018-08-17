@@ -16,9 +16,13 @@ padding: 0;
 }
 
 body {
-background: white;
+background-color: whitesmoke;
 font-family: 'Poppins', sans-serif;
 color: #414141;
+}
+
+h2 {
+font-size: 5em;
 }
 
 p {
@@ -285,7 +289,6 @@ justify-content: center;
 text-align: center;
 text-transform: capitalize;
 color: rgba(0,128,128,1);
-font-size: 5em;
 padding: 0 0.5em 0.5em 0.5em;
 }
 
@@ -337,13 +340,12 @@ flex-direction: column;
 
 .skills h2 {
 text-transform: capitalize;
-font-size: 5em;
 padding: 0 0.5em 0 0.5em;
 color: white;
 }
 
 .individual-skills {
-background: white;
+background-color: whitesmoke;
 margin: 1em;
 border-radius: 15px;
 }
@@ -357,6 +359,74 @@ padding: 0.3em;
 font-size: 1.3em;
 padding: 0.5em;
 color: #414141;
+}
+
+
+/*Projects Section*/
+
+.projects {
+font-size: 16px;
+color: #414141;
+margin: 0;
+padding: 0;
+}
+
+.projects h2 {
+text-align: center;
+text-transform: capitalize;
+color: rgba(0,128,128,1);
+padding: 1em 0.5em 0 0.5em;
+}
+
+.swiper-container {
+width: 100%;
+padding-top: 150px;
+padding-bottom: 150px;
+}
+
+.swiper-slide {
+background-position: center;
+background-size: cover;
+width: 500px;
+height: 650px;
+background-color: white;
+}
+
+.swiper-image-details {
+text-align: center;
+padding: 10px;
+text-transform: capitalize;
+font-size: 1.4em;
+}
+
+.swiper-image-details h3 {
+padding: 0.7em;
+color: rgba(0,128,128,1);
+}
+
+.swiper-button {
+text-decoration: none;
+color: #414141;
+background-color: white;
+border: 2px solid #414141;
+border-radius: 12px;
+padding: 15px;
+font-size: 0.7em;
+cursor: pointer;
+transition: all ease-in-out 300ms;
+-webkit-transition: all ease-in-out 300ms;
+-moz-transition: all ease-in-out 300ms;
+-o-transition: all ease-in-out 300ms;
+}
+
+.swiper-button:hover {
+color: rgba(0,128,128,1);
+border-color: rgba(0,128,128,1);
+}
+
+.swiper-button:focus {
+color: rgba(0,128,128,1);
+border-color: rgba(0,128,128,1);
 }
 
 
@@ -410,14 +480,6 @@ flex-direction: column;
 text-align: center;
 }
     
-.about-image {
-border-radius: 100%;
-}
-
-.about-image-overlay {
-border-radius: 100%;
-}
-    
 }
 
 @media only screen and (min-width: 1200px) {
@@ -446,8 +508,11 @@ padding: 1em;
 
 @media only screen and (min-width: 1500px) {
     
+h2 {
+font-size: 7em;
+}
+    
 .about h2 {
-font-size: 6em;
 padding: 0;
 }
     
