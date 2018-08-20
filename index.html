@@ -102,65 +102,52 @@
           
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class="swiper-image">
-                      <img src="images/project1.png" alt="We got you Marketing">
-                  </div>
-                  <div class="swiper-image-details">
-                      <h3>we got you marketing</h3>
-                      <a href="https://www.beattydev.com/" target="_blank" class="swiper-button">visit me</a>
+                
+              <div class="swiper-slide image-one">
+                  <div class="swiper-overlay">
                   </div>
               </div>
-              <div class="swiper-slide">
-                  <div class="swiper-image">
-                      <img src="images/project2.png" alt="Ben and Marissa Do">
-                  </div>
-                  <div class="swiper-image-details">
-                      <h3>ben and marissa do</h3>
-                      <a href="https://benbeatty85.github.io/ben-photography-site/" target="_blank" class="swiper-button">visit me</a>
+                
+              <div class="swiper-slide image-two">
+                  <div class="swiper-overlay">
                   </div>
               </div>
-              <div class="swiper-slide">
-                  <div class="swiper-image">
-                      <img src="images/project3.png" alt="Adelina's Catering">
-                  </div>
-                  <div class="swiper-image-details">
-                      <h3>adelina's catering</h3>
-                      <a href="https://www.adelinascatering.ca/" target="_blank" class="swiper-button">visit me</a>
+                
+              <div class="swiper-slide image-three">
+                  <div class="swiper-overlay">
                   </div>
               </div>
-              <div class="swiper-slide">
-                  <div class="swiper-image">
-                      <img src="images/project4.png" alt="Notify Business Site">
-                  </div>
-                  <div class="swiper-image-details">
-                      <h3>notify business site</h3>
-                      <a href="https://benbeatty85.github.io/responsive-notify-site/" target="_blank" class="swiper-button">visit me</a>
+                
+              <div class="swiper-slide image-four">
+                  <div class="swiper-overlay">
                   </div>
               </div>
-              <div class="swiper-slide">
-                  <div class="swiper-image">
-                      <img src="images/project5.png" alt="Fun Flickr Fotos">
-                  </div>
-                  <div class="swiper-image-details">
-                      <h3>fun flickr fotos</h3>
-                      <a href="https://benbeatty85.github.io/flickrApp/" target="_blank" class="swiper-button">visit me</a>
+                
+              <div class="swiper-slide image-five">
+                  <div class="swiper-overlay">
                   </div>
               </div>
-              <div class="swiper-slide">
-                   <div class="swiper-image">
-                      <img src="images/project6.png" alt="Weatherman from Hell">
-                  </div>
-                  <div class="swiper-image-details">
-                      <h3>weatherman from hell</h3>
-                      <a href="https://benbeatty85.github.io/vanilla-js-projects/" target="_blank" class="swiper-button">visit me</a>
+                
+              <div class="swiper-slide image-six">
+                  <div class="swiper-overlay">
                   </div>
               </div>
             </div>
-              <!-- Add Pagination -->
+            <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
-        </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
           
+      </section>
+      
+      <section class="contact">
+          <h2>about</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh tortor id aliquet lectus proin nibh nisl. Sed libero enim sed faucibus turpis in eu mi bibendum. Libero volutpat sed cras ornare arcu. Eu sem integer vitae justo eget. Pretium aenean pharetra magna ac placerat.</p>
+          <h2>about</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh tortor id aliquet lectus proin nibh nisl. Sed libero enim sed faucibus turpis in eu mi bibendum. Libero volutpat sed cras ornare arcu. Eu sem integer vitae justo eget. Pretium aenean pharetra magna ac placerat.</p>
+          <h2>about</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh tortor id aliquet lectus proin nibh nisl. Sed libero enim sed faucibus turpis in eu mi bibendum. Libero volutpat sed cras ornare arcu. Eu sem integer vitae justo eget. Pretium aenean pharetra magna ac placerat.</p>
       </section>
       
       
@@ -174,19 +161,13 @@
   <script type="text/javascript" src="swiper.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows : true,
-      },
       pagination: {
         el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
   </script>

@@ -19,6 +19,7 @@ body {
 background-color: whitesmoke;
 font-family: 'Poppins', sans-serif;
 color: #414141;
+overflow-x: hidden;
 }
 
 h2 {
@@ -364,71 +365,67 @@ color: #414141;
 
 /*Projects Section*/
 
+
 .projects {
-font-size: 16px;
 color: #414141;
-margin: 0;
-padding: 0;
 }
 
 .projects h2 {
 text-align: center;
 text-transform: capitalize;
 color: rgba(0,128,128,1);
-padding: 1em 0.5em 0 0.5em;
+padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
 .swiper-container {
-width: 100%;
-padding-top: 150px;
-padding-bottom: 150px;
+width: 90vw;
+height: 60vh;
 }
-
 .swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-width: 500px;
-height: 650px;
-background-color: white;
+position: relative;
 }
 
-.swiper-image-details {
-text-align: center;
-padding: 10px;
-text-transform: capitalize;
-font-size: 1.4em;
+.image-one {
+background-image: url(images/project1.png);
 }
 
-.swiper-image-details h3 {
-padding: 0.7em;
-color: rgba(0,128,128,1);
+.image-two {
+background-image: url(images/project2.png);
 }
 
-.swiper-button {
-text-decoration: none;
-color: #414141;
-background-color: white;
-border: 2px solid #414141;
-border-radius: 12px;
-padding: 15px;
-font-size: 0.7em;
-cursor: pointer;
-transition: all ease-in-out 300ms;
--webkit-transition: all ease-in-out 300ms;
--moz-transition: all ease-in-out 300ms;
--o-transition: all ease-in-out 300ms;
+.image-three {
+background-image: url(images/project3.png);
 }
 
-.swiper-button:hover {
-color: rgba(0,128,128,1);
-border-color: rgba(0,128,128,1);
+.image-four {
+background-image: url(images/project4.png);
 }
 
-.swiper-button:focus {
-color: rgba(0,128,128,1);
-border-color: rgba(0,128,128,1);
+.image-five {
+background-image: url(images/project5.png);
 }
 
+.image-six {
+background-image: url(images/project6.png);
+}
 
 /*Media Queries*/
 
