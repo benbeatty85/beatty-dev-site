@@ -378,8 +378,8 @@ padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
 .swiper-container {
-width: 90vw;
-height: 60vh;
+width: 100vw;
+height: 100vh;
 }
 .swiper-slide {
 text-align: center;
@@ -401,6 +401,55 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 position: relative;
+}
+
+.swiper-overlay {
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgba(0,128,128,0.3);
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.swiper-overlay h3 {
+color: white;
+font-size: 2em;
+padding: 1em;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+text-transform: capitalize;
+}
+
+.swiper-button {
+text-decoration: none;
+color: #414141;
+width: 150px;
+margin: 0 auto;
+text-transform: capitalize;
+background-color: white;
+border-radius: 12px;
+padding: 15px;
+font-size: 1em;
+cursor: pointer;
+transition: all ease-in-out 300ms;
+-webkit-transition: all ease-in-out 300ms;
+-moz-transition: all ease-in-out 300ms;
+-o-transition: all ease-in-out 300ms;
+}
+
+.swiper-button:hover {
+background-color: whitesmoke;
+}
+
+.swiper-button:focus {
+background-color: whitesmoke;
+}
+
+.swiper-button-next, .swiper-button-prev {
+padding: 2em;
 }
 
 .image-one {
@@ -453,6 +502,15 @@ font-size: 5em;
 font-size: 1.5em;
 }
     
+.swiper-overlay h3 {
+font-size: 3em;
+}
+    
+.swiper-button {
+font-size: 2em;
+width: 200px;
+}
+    
 }
 
 @media only screen and (min-width: 985px) {
@@ -498,6 +556,15 @@ font-size: 9em;
 .individual-skills p {
 font-size: 1.7em;
 padding: 1em;
+}
+    
+.swiper-overlay h3 {
+font-size: 5em;
+}
+    
+.swiper-button {
+font-size: 3em;
+width: 300px;
 }
     
 }
