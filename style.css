@@ -378,9 +378,10 @@ padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
 .swiper-container {
-width: 100vw;
-height: 100vh;
+width: 80vw;
+height: 70vh;
 }
+
 .swiper-slide {
 text-align: center;
 font-size: 18px;
@@ -413,14 +414,6 @@ height: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-}
-
-.swiper-overlay h3 {
-color: white;
-font-size: 2em;
-padding: 1em;
-text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-text-transform: capitalize;
 }
 
 .swiper-button {
@@ -502,10 +495,6 @@ font-size: 5em;
 font-size: 1.5em;
 }
     
-.swiper-overlay h3 {
-font-size: 3em;
-}
-    
 .swiper-button {
 font-size: 2em;
 width: 200px;
@@ -558,8 +547,9 @@ font-size: 1.7em;
 padding: 1em;
 }
     
-.swiper-overlay h3 {
-font-size: 5em;
+.swiper-container {
+width: 90vw;
+height: 80vh;
 }
     
 .swiper-button {
@@ -583,6 +573,10 @@ padding: 0;
 .about p {
 font-size: 1.6em;
 padding: 2em;
+}
+    
+.swiper-container {
+height: 90vh;
 }
 
 }
