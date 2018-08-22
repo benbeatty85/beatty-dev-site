@@ -1,6 +1,7 @@
 /*colours*/
 
-/*Cadetblue = rgba(95,158,160,1)*/
+/*Peru = rgba(205,133,63,1)*/
+
 
 *, *::before, *::after {
 /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
@@ -55,7 +56,7 @@ transition: background 0.75s ease 0.75s, width 0s ease 1.5s, height 0s ease 1.5s
 }
 
 #nav_switch:checked + .full-screen-navigation {
-background: rgba(95,158,160,1);
+background: rgba(205,133,63,1);
 width: 100%;
 height: 100%;
 z-index: 999;
@@ -252,7 +253,7 @@ z-index: 2;
 }
 
 .header-content h1 {
-color: rgba(95,158,160,1);
+color: rgba(205,133,63,1);
 }
 
 .header-content p {
@@ -290,7 +291,7 @@ justify-content: center;
 .about h2 {
 text-align: center;
 text-transform: capitalize;
-color: rgba(95,158,160,1);
+color: rgba(205,133,63,1);
 padding: 0 0.5em 0.5em 0.5em;
 }
 
@@ -316,21 +317,13 @@ position: relative;
 border-radius: 0;
 }
 
-.about-image-overlay {
-position: absolute;
-height: 100%;
-width: 100%;
-background-color: rgba(95,158,160,0.3);
-border-radius: 0;
-}
-
 
 /*Skills Section*/
 
 
 .skills {
-background-color: rgba(95,158,160,1);
-color: rgba(95,158,160,1);
+background-color: rgba(205,133,63,1);
+color: rgba(205,133,63,1);
 text-align: center;
 text-transform: capitalize;
 }
@@ -375,7 +368,7 @@ padding-bottom: 2em;
 .projects h2 {
 text-align: center;
 text-transform: capitalize;
-color: rgba(95,158,160,1);
+color: rgba(205,133,63,1);
 padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
@@ -453,7 +446,7 @@ margin-bottom: 5px;
 margin-left: 5px;
 align-self: center;
 text-transform: capitalize;
-background-color: rgba(95,158,160,1);
+background-color: rgba(205,133,63,1);
 border-radius: 12px;
 padding: 5px;
 font-size: 0.7em;
@@ -465,11 +458,11 @@ transition: all ease-in-out 300ms;
 }
 
 .swiper-button:hover {
-background-color: rgba(95,158,160,0.9);
+background-color: rgba(205,133,63,0.9);
 }
 
 .swiper-button:focus {
-background-color: rgba(95,158,160,0.9);
+background-color: rgba(205,133,63,0.9);
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -495,7 +488,7 @@ background-color: rgba(155,155,155,0.8);
 
 
 .contact-me {
-background: rgba(95,158,160,1);
+background: rgba(205,133,63,1);
 color: whitesmoke;
 line-height: 1.6;
 padding: 1em;
@@ -507,7 +500,7 @@ padding: 0.5em;
 }
 
 .container {
-max-width: 1170px;
+max-width: 1300px;
 margin-left: auto;
 margin-right: auto;
 padding: 1em;
@@ -523,7 +516,7 @@ padding: 1em;
 
 .company-info {
 background: whitesmoke;
-color: rgba(95,158,160,1);
+color: rgba(205,133,63,1);
 text-align: center;
 }
 
@@ -541,13 +534,21 @@ margin: 1em;
 text-transform: lowercase;
 }
 
+.company-info img {
+width: 400px;
+max-width: 400px;
+height: auto;
+padding: inherit;
+display: none;
+}
+
 .company-info i {
 padding: 0.5em;
 }
 
 .contact {
 background: white;
-color: rgba(95,158,160,1);
+color: rgba(205,133,63,1);
 }
 
 
@@ -581,7 +582,7 @@ border: 1px solid lightgray;
 }
 
 .contact form button {
-background: rgba(95,158,160,0.8);
+background: rgba(205,133,63,0.8);
 color: white;
 border: 0;
 cursor: pointer;
@@ -593,11 +594,11 @@ transition: all ease-in-out 300ms;
 }
 
 .contact form button:hover {
-background: rgba(95,158,160,1);
+background: rgba(205,133,63,1);
 }
 
 .contact form button:focus {
-background: rgba(95,158,160,1);
+background: rgba(205,133,63,1);
 }
 
 /*Media Queries*/
@@ -648,6 +649,10 @@ text-align: left;
 margin: 0;
 }
     
+.company-info img {
+display: inherit;
+}
+    
 }
 
 @media only screen and (min-width: 985px) {
@@ -687,11 +692,11 @@ margin: 2em;
 }
     
 .individual-skills i {
-font-size: 9em;
+font-size: 8em;
 }
     
 .individual-skills p {
-font-size: 1.7em;
+font-size: 1.2em;
 padding: 1em;
 }
     
@@ -703,6 +708,10 @@ height: 80vh;
 .swiper-button {
 font-size: 1.5em;
 width: 200px;
+}
+    
+.contact form button {
+font-size: 1em;
 }
     
 }
