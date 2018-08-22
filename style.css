@@ -512,7 +512,7 @@ padding: 1em;
 }
 
 .company-info {
-background: whitesmoke;
+background: white;
 color: rgba(205,133,63,1);
 text-align: center;
 }
@@ -544,7 +544,7 @@ padding: 0.5em;
 }
 
 .contact {
-background: white;
+background: whitesmoke;
 color: rgba(205,133,63,1);
 }
 
@@ -596,6 +596,62 @@ background: rgba(205,133,63,1);
 
 .contact form button:focus {
 background: rgba(205,133,63,1);
+}
+
+
+/* Footer Section*/
+
+
+.footer {
+text-transform: capitalize;
+color: rgba(205,133,63,1);
+padding: 2em;
+}
+
+.footer-wrapper {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.media-icons {
+display: flex;
+flex-direction: row;
+padding: 1.5em;
+}
+
+.icon-style {
+border: 5px solid rgba(205,133,63,1);
+border-radius: 50%;
+background-color: whitesmoke;
+text-decoration: none;
+text-align: center;
+width: 125px;
+height: 125px;
+padding: 1.7em;
+margin: 2em;
+}
+
+.icon-style i {
+font-size: 60px;
+color: rgba(205,133,63,1);
+transition: transform ease-in-out 300ms;
+-webkit-transition: transform ease-in-out 300ms;
+-moz-transition: transform ease-in-out 300ms;
+-o-transition: transform ease-in-out 300ms;
+}
+
+.icon-style i:hover, .icon-style:focus {
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+}
+
+.footer-text {
+font-size: 1em;
 }
 
 /*Media Queries*/
@@ -672,6 +728,15 @@ flex-direction: column;
     
 .about p {
 text-align: center;
+}
+    
+.footer-wrapper {
+flex-direction: row;
+justify-content: center;
+}
+    
+.footer-text {
+font-size: 1.2em;
 }
     
 }
