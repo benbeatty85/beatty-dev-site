@@ -578,6 +578,11 @@ padding: 1em;
 border: 1px solid lightgray;
 }
 
+.contact form input, .contact form textarea {
+font-size: 1.2em;
+color: #414141;
+}
+
 .contact form button {
 background: rgba(205,133,63,0.8);
 color: white;
