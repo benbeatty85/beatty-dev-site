@@ -404,7 +404,7 @@ padding: 0.5em;
 }
 
 .swiper-container {
-width: 80vw;
+width: 100vw;
 height: 70vh;
 }
 
@@ -522,7 +522,6 @@ background-color: rgba(155,155,155,0.8);
 background: rgba(205,133,63,1);
 color: whitesmoke;
 line-height: 1.6;
-padding: 1em;
 text-transform: capitalize;
 }
 
@@ -769,6 +768,10 @@ flex-direction: column;
     
 .about p {
 text-align: center;
+}
+    
+.swiper-container {
+width: 90vw;
 }
     
 .wrapper {
