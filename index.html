@@ -18,29 +18,24 @@
   </head>
   <body>
       
-      <input type="checkbox" id="nav_switch" />
-      <div id="fullscreen_nav" class="full-screen-navigation">
-        <label for="nav_switch" class="cross-bars-switch"></label>
-          <ul class="navigation-container">
-              <div class="link-container">
-                <li><a href="#home" class="link-underline">home</a></li>
-              </div>
-              <div class="link-container">
-                <li><a href="#about" class="link-underline">about</a></li>
-              </div>
-              <div class="link-container">
-                <li><a href="#skills" class="link-underline">skills</a></li>
-              </div>
-              <div class="link-container">
-                <li><a href="#projects" class="link-underline">projects</a></li>
-              </div>
-              <div class="link-container">
-                <li><a href="#contact" class="link-underline">contact</a></li>
-              </div>
-          </ul>
+    
+      <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
       </div>
-      <label for="nav_switch" class="three-bars-switch"></label>
-      
+
+      <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        </nav>
+    </div>
       
       <section class="header" id="home">
           <div class="header-content">

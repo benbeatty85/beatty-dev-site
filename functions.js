@@ -89,3 +89,9 @@ function saveMessage (name, company, email, phone, message) {
         });
     });
 
+
+$('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+
