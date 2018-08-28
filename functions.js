@@ -95,3 +95,10 @@ $('#toggle').click(function() {
    $('#overlay').toggleClass('open');
   });
 
+$('.close-nav').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+
+
+
