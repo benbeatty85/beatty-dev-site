@@ -90,13 +90,16 @@ function saveMessage (name, company, email, phone, message) {
     });
 
 
+//Close the navigation when you click on X and links
+
+
 $('#toggle').click(function() {
    $(this).toggleClass('active');
    $('#overlay').toggleClass('open');
   });
 
 $('.close-nav').click(function() {
-   $(this).toggleClass('active');
+   $('#toggle').toggleClass('active');
    $('#overlay').toggleClass('open');
   });
 
