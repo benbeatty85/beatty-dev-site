@@ -166,6 +166,11 @@ animation-delay: .55s;
 animation-delay: .65s;
 }
 
+.overlay.open li:nth-of-type(5) {
+-webkit-animation-delay: .75s;
+animation-delay: .75s;
+}
+
 .overlay nav {
 position: relative;
 height: 70%;
