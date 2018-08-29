@@ -734,11 +734,11 @@ justify-content: center;
 }
     
 .individual-skills i {
-font-size: 5em;
+font-size: 4em;
 }
 
 .individual-skills p {
-font-size: 1.5em;
+font-size: 1.2em;
 }
     
 .swiper-button {
@@ -816,12 +816,12 @@ margin: 2em;
 }
     
 .individual-skills i {
-font-size: 6em;
+font-size: 5em;
 }
     
 .individual-skills p {
-font-size: 1.2em;
-padding: 1em;
+font-size: 1em;
+padding: 0.5em;
 }
     
 .swiper-container {
