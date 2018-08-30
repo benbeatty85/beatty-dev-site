@@ -105,3 +105,13 @@ $('.close-nav').click(function() {
 
 
 
+//page loader
+
+    var loaderOverlay = document.getElementById("page-loader");
+
+    window.addEventListener('load', function () {
+      loaderOverlay.style.display = 'none';
+    });
+
+
+
