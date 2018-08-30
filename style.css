@@ -761,6 +761,8 @@ transform: rotate(360deg);
     
 }
 
+
+
 /*Media Queries*/
 
 
@@ -862,11 +864,11 @@ margin: 2em;
 }
     
 .individual-skills i {
-font-size: 5em;
+font-size: 6em;
 }
     
 .individual-skills p {
-font-size: 1em;
+font-size: 1.3em;
 padding: 0.5em;
 }
     
