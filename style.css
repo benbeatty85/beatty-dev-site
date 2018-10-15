@@ -416,7 +416,7 @@ height: 70vh;
 .swiper-slide {
 text-align: center;
 font-size: 18px;
-background: #fff;
+background: whitesmoke;
 display: -webkit-box;
 display: -ms-flexbox;
 display: -webkit-flex;
@@ -431,7 +431,7 @@ justify-content: center;
 align-items: center;
 background-repeat: no-repeat;
 background-position: center;
-background-size: cover;
+background-size: contain;
 position: relative;
 }
 
@@ -481,7 +481,7 @@ margin-bottom: 5px;
 margin-left: 5px;
 align-self: center;
 text-transform: capitalize;
-background-color: rgba(205,133,63,1);
+background-color: rgba(205,133,63,0.9);
 border-radius: 12px;
 padding: 5px;
 font-size: 0.7em;
@@ -493,11 +493,11 @@ transition: all ease-in-out 300ms;
 }
 
 .swiper-button:hover {
-background-color: rgba(205,133,63,0.9);
+background-color: rgba(205,133,63,1);
 }
 
 .swiper-button:focus {
-background-color: rgba(205,133,63,0.9);
+background-color: rgba(205,133,63,1);
 }
 
 .swiper-button-next, .swiper-button-prev {
