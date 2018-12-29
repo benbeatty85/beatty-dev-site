@@ -436,7 +436,7 @@ p {
 
 .swiper-container {
     width: 90vw;
-    height: 70vh;
+    height: 50vh;
 }
 
 .swiper-slide {
@@ -459,7 +459,6 @@ p {
     background-position: center;
     background-size: contain;
     position: relative;
-    top: -50px;
 }
 
 .image-one {
@@ -510,8 +509,8 @@ p {
     text-transform: capitalize;
     background-color: rgba(205, 92, 92, 0.9);
     border-radius: 12px;
-    padding: 5px;
-    font-size: 0.7em;
+    padding: 10px;
+    font-size: 1em;
     cursor: pointer;
     transition: all ease-in-out 300ms;
     -webkit-transition: all ease-in-out 300ms;
