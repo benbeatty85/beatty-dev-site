@@ -348,6 +348,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: white;
+    border-top: 2px dashed rgba(205, 92, 92, 1);
 }
 
 .about h2 {
@@ -431,12 +433,12 @@ p {
     text-align: center;
     text-transform: capitalize;
     color: rgba(205, 92, 92, 1);
-    padding: 0.5em;
+    padding: 0.5em 0.5em 0 0.5em;
 }
 
 .swiper-container {
-    width: 90vw;
-    height: 50vh;
+    width: 80vw;
+    height: 60vh;
 }
 
 .swiper-slide {
@@ -499,18 +501,17 @@ p {
 .swiper-button {
     text-decoration: none;
     color: whitesmoke;
-    width: 100px;
+    width: 150px;
     position: absolute;
     bottom: 0;
     margin: 0 auto;
     margin-bottom: 5px;
-    margin-left: 5px;
     align-self: center;
     text-transform: capitalize;
     background-color: rgba(205, 92, 92, 0.9);
     border-radius: 12px;
     padding: 10px;
-    font-size: 1em;
+    font-size: 1.3em;
     cursor: pointer;
     transition: all ease-in-out 300ms;
     -webkit-transition: all ease-in-out 300ms;
@@ -528,7 +529,7 @@ p {
 
 .swiper-button-next,
 .swiper-button-prev {
-    padding: 2em;
+    padding: 2.2em;
     background-color: rgba(155, 155, 155, 0.5);
     border-radius: 100%;
     transition: all ease-in-out 300ms;
@@ -907,8 +908,8 @@ p {
     }
 
     .swiper-button {
-        font-size: 1.5em;
-        width: 200px;
+        font-size: 2em;
+        width: 300px;
     }
 
     .contact form button {
