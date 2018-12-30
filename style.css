@@ -505,7 +505,6 @@ p {
     position: absolute;
     bottom: 0;
     margin: 0 auto;
-    margin-bottom: 5px;
     align-self: center;
     text-transform: capitalize;
     background-color: rgba(205, 92, 92, 0.9);
@@ -908,8 +907,8 @@ p {
     }
 
     .swiper-button {
-        font-size: 2em;
-        width: 300px;
+        font-size: 1.6em;
+        width: 250px;
     }
 
     .contact form button {
