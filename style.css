@@ -500,17 +500,13 @@ p {
 
 .swiper-button {
     text-decoration: none;
-    color: whitesmoke;
-    width: 150px;
+    color: rgba(205, 92, 92, 1);
     position: absolute;
     bottom: 0;
     margin: 0 auto;
     align-self: center;
     text-transform: capitalize;
-    background-color: rgba(205, 92, 92, 0.9);
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 1.3em;
+    font-size: 1.5em;
     cursor: pointer;
     transition: all ease-in-out 300ms;
     -webkit-transition: all ease-in-out 300ms;
@@ -518,12 +514,25 @@ p {
     -o-transition: all ease-in-out 300ms;
 }
 
-.swiper-button:hover {
-    background-color: rgba(205, 92, 92, 1);
+.swiper-button:hover::after,
+.swiper-button:focus::after,
+.swiper-button:active::after {
+    width: 90%;
 }
 
-.swiper-button:focus {
+.swiper-button::after {
+    content: '';
+    position: absolute;
+    top: 78%;
+    left: 5%;
+    width: 0%;
+    margin-top: 5px;
+    height: 5px;
     background-color: rgba(205, 92, 92, 1);
+    transition: 300ms ease all;
+    -webkit-transition: 300ms ease all;
+    -moz-transition: 300ms ease all;
+    -o-transition: 300ms ease all;
 }
 
 .swiper-button-next,
@@ -907,8 +916,7 @@ p {
     }
 
     .swiper-button {
-        font-size: 1.6em;
-        width: 250px;
+        font-size: 2em;
     }
 
     .contact form button {
