@@ -538,6 +538,7 @@ p {
 .swiper-button-next,
 .swiper-button-prev {
     padding: 2.2em;
+    display: none;
     background-color: rgba(155, 155, 155, 0.5);
     border-radius: 100%;
     transition: all ease-in-out 300ms;
@@ -853,6 +854,11 @@ p {
     .about p {
         text-align: left;
         padding-right: 2em;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
     }
 
     .swiper-container {
