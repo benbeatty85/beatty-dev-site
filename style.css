@@ -711,7 +711,7 @@ p {
 .footer {
     text-transform: capitalize;
     color: rgba(205, 92, 92, 1);
-    padding: 2em;
+    padding: 1em;
 }
 
 .footer-wrapper {
@@ -725,7 +725,7 @@ p {
 .media-icons {
     display: flex;
     flex-direction: row;
-    padding: 1.5em;
+    padding: 1em;
 }
 
 .icon-style {
